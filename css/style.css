@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'OldeEnglish';
+  src: url('../fonts/OldeEnglish.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Actor', sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s;
+}
+
+.verify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFF;
+}
+
+.welcome {
+  height: 150px;
+  margin: auto;
+  font-size: 50px;
+  width: 80%;
+}
+
+.selection-box {
+  height: 150px;
+  width: 350px;
+  margin: auto;
+  font-size: 50px;
+  border: solid #FFF 1px;
+  line-height: 150px;
+  overflow: hidden;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.selection-box:hover {
+  color: #000;
+  background-color: #FFF;
+  transition: all 0.5s;
+}
+
+.site {
+  display: none;
+  height: 100%;
+}
+
+.nav-bar {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-item {
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 200px;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.nav-item:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s;
+}
+
+.nav-home {
+  font-family: OldeEnglish;
+  font-size: 60px;
+  width: 100px;
+  margin-right: auto;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/bar.jpg");
+  background-blend-mode: darken;
+  display: flex;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/bar.jpg");
+  background-blend-mode: color-burn;
+  display: flex;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../images/bar.jpg");
+  background-blend-mode: darken;
+  display: flex;
+}
+
+.home-text {
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 80%;
+  line-height: 250px;
+  font-family: OldeEnglish;
+  font-size: 200px;
+  margin: auto;
+  text-align: center;
+  color: #FFF;
+}
+
+.food-nav {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.menu-body {
+  height: 75%;
+  width: 80%;
+  margin: auto;
+  padding: 50px 30px 0px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  /* border: solid #FFF 1px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.food-category {
+  flex: 1;
+  padding: 0 15px;
+}
+
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+
+.olde {
+  font-family: OldeEnglish;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.hours-text {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #FFF;
+  border: solid #FFF 1px;
+}
+
+.contact {
+  color: #FFF;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.address {
+  width: 300px;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.phone {
+  width: 300px;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    font-size: 25px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.footer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.no-select {
+  user-select: none;
+}
