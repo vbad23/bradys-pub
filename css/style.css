@@ -111,21 +111,21 @@ a:hover {
 
 .home {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/bar.jpg");
+  background-image: url("../images/tap.jpg");
   background-blend-mode: darken;
   display: flex;
 }
 
 .about {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/bar.jpg");
+  background-image: url("../images/tap.jpg");
   background-blend-mode: color-burn;
   display: flex;
 }
 
 .menu {
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../images/bar.jpg");
+  background-image: url("../images/tap.jpg");
   background-blend-mode: darken;
   display: flex;
 }
