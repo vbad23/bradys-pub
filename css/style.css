@@ -18,7 +18,6 @@ body {
 
 a {
   color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
   transition: color 0.2s;
 }
 
@@ -90,7 +89,7 @@ a:hover {
 }
 
 .nav-item:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1) !important;
   transition: 0.2s;
 }
 
@@ -110,7 +109,7 @@ a:hover {
 }
 
 .home {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
   background-image: url("../images/tap.jpg");
   background-blend-mode: darken;
   display: flex;
@@ -130,21 +129,21 @@ a:hover {
 }
 
 .about {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   background-image: url("../images/shakers.jpg");
   background-blend-mode: color-burn;
   display: flex;
 }
 
 .menu {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   background-image: url("../images/burger.jpg");
   background-blend-mode: darken;
   display: flex;
 }
 
 .hours {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   background-image: url("../images/lamps.jpg");
   background-blend-mode: darken;
   display: flex;
@@ -179,28 +178,22 @@ a:hover {
   margin: 120px auto 120px auto;
   width: 80%;
   max-width: 1000px;
-  padding: 50px 30px 0px;
+  padding: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #FFF;
   overflow: auto;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .menu-text {
-  /* display: flex;
-  flex-direction: row; */
-  overflow-y: hidden;
   margin-top: 10px;
 }
 
 .food-category {
-  flex: 1;
+  width: 90%;
   padding: 0 15px;
   margin: 0 auto;
 }
-
 
 .menu-item {
   margin: 35px 0;
@@ -233,7 +226,9 @@ a:hover {
   font-weight: normal;
 }
 
-h2 {
+.food-category h2 {
+  font-family: OldeEnglish;
+  font-size: 40px;
   font-weight: normal;
 }
 
@@ -282,10 +277,10 @@ h2 {
 .footer {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.2);
-  width: 100%;
   text-align: center;
   position: fixed;
   bottom: 5px;
+  width: 100%;
 }
 
 .fade-in {
@@ -309,6 +304,11 @@ h2 {
   user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 /* tablet view */
 @media (max-width: 1100px) {
   .home-text {
@@ -328,19 +328,27 @@ h2 {
 
   .menu-body {
     margin-top: 110px;
-    margin-bottom: 150px;
+    margin-bottom: 85px;
     padding: 10px 5px;
-    width: auto;
-    background-color: transparent;
+    width: 80%;
   }
 
   .menu-item-name {
     overflow-x: auto;
-    width: 75%;
   }
 
   .contact {
-    bottom: 35px;
+    height: 75px;
+  }
+
+  .address {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .phone {
+    font-size: 15px;
+    line-height: 40px;
   }
 }
 
@@ -352,13 +360,17 @@ h2 {
     line-height: 70px;
   }
 
+  .nav-home {
+    font-size: 40px;
+  }
+
   .nav-bar {
     height: 70px;
   }
 
   .menu-body {
     margin-top: 80px;
-    margin-bottom: 80px;
+    width: auto;
   }
 
   .hours-text {
@@ -367,11 +379,6 @@ h2 {
     width: 100%;
     background-color: transparent;
     padding: 0px;
-  }
-
-  .contact {
-    height: 40px;
-    background-color: transparent;
   }
 
   .address {

@@ -66,6 +66,22 @@ function selectSpecialties() {
   });
 }
 
+function checkSection() {
+  $(".nav-item").css("color", "rgba(255, 255, 255, 0.5");
+  if($(".home").is(':visible')) {
+    $(".nav-home").css("color", "white");
+  }
+  if($(".about").is(':visible')) {
+    $(".nav-about").css("color", "white");
+  }
+  if($(".menu").is(':visible')) {
+    $(".nav-menu").css("color", "white");
+  }
+  if($(".hours").is(':visible')) {
+    $(".nav-hours").css("color", "white");
+  }
+}
+
 $(function() {
   // $(".over-21").on("click", function() {
   $(".verify").css("display", "none");
@@ -73,41 +89,55 @@ $(function() {
   $(".section").css("display", "none");
   $(".home").css("display", "flex");
   selectAppetizers();
+  checkSection();
 
   // });
   $(".footer").text("© " + year + " Brady's Pub. All Rights Reserved. This website and all images were created by Vikram Badarinath.");
 
   // Nav bar functionality
   $(".nav-home").on("click", function() {
-    $(".section").fadeOut(200);
-    setTimeout(function() {
-      $(".section").css("display", "none");
-      $(".home").css("display", "flex");
-    }, 200)
-  })
+    if(!$(".home").is(':visible')) {
+        $(".section").fadeOut(200);
+        setTimeout(function() {
+          $(".section").css("display", "none");
+          $(".home").css("display", "flex");
+          checkSection();
+        }, 200);
+      }
+  });
 
   $(".nav-about").on("click", function() {
-    $(".section").fadeOut(200);
-    setTimeout(function() {
-      $(".section").css("display", "none");
-      $(".about").css("display", "flex");
-    }, 200)
-  })
+    if(!$(".about").is(':visible')) {
+        $(".section").fadeOut(200);
+        setTimeout(function() {
+          $(".section").css("display", "none");
+          $(".about").css("display", "flex");
+          checkSection();
+        }, 200);
+      }
+  });
 
   $(".nav-menu").on("click", function() {
-    $(".section").fadeOut(200);
-    setTimeout(function() {
-      $(".section").css("display", "none");
-      $(".menu").css("display", "flex");
-    }, 200)
+    if(!$(".menu").is(':visible')) {
+        $(".section").fadeOut(200);
+        setTimeout(function() {
+          $(".section").css("display", "none");
+          $(".menu").css("display", "flex");
+          checkSection();
+        }, 200);
+      }
   });
 
   $(".nav-hours").on("click", function() {
-    $(".section").fadeOut(200);
-    setTimeout(function() {
-      $(".section").css("display", "none");
-      $(".hours").css("display", "flex");
-    }, 200)
+    if(!$(".hours").is(':visible')) {
+        $(".section").fadeOut(200);
+        setTimeout(function() {
+          $(".section").css("display", "none");
+          $(".hours").css("display", "flex");
+          checkSection();
+        }, 200);
+      }
+
   });
 
   // Menu navigation
