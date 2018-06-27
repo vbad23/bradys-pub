@@ -63,7 +63,6 @@ a:hover {
 }
 
 .site {
-  display: none;
   height: 100%;
 }
 
@@ -133,6 +132,16 @@ a:hover {
   background-image: url("../images/shakers.jpg");
   background-blend-mode: color-burn;
   display: flex;
+}
+
+.about-text {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #FFF;
 }
 
 .menu {
@@ -373,7 +382,7 @@ a:hover {
     width: auto;
   }
 
-  .hours-text {
+  .about-text, .hours-text {
     margin: 120px 10px;
     border: none;
     width: 100%;

@@ -83,15 +83,13 @@ function checkSection() {
 }
 
 $(function() {
-  // $(".over-21").on("click", function() {
-  $(".verify").css("display", "none");
-  $(".site").css("display", "block");
+
+  // Default
   $(".section").css("display", "none");
   $(".home").css("display", "flex");
   selectAppetizers();
   checkSection();
 
-  // });
   $(".footer").text("© " + year + " Brady's Pub. All Rights Reserved. This website and all images were created by Vikram Badarinath.");
 
   // Nav bar functionality
