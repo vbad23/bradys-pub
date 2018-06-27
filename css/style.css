@@ -382,7 +382,16 @@ a:hover {
     width: auto;
   }
 
-  .about-text, .hours-text {
+  .about-text {
+    margin: 120px 10px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    padding: 0px;
+    font-size: 10px;
+  }
+
+  .hours-text {
     margin: 120px 10px;
     border: none;
     width: 100%;
