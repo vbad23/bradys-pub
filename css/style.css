@@ -16,8 +16,18 @@ body {
   background-color: #000;
 }
 
+
 a {
   color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.about a {
+  color: rgba(58, 198, 30, 0.9);
   transition: color 0.2s;
 }
 
